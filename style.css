@@ -51,6 +51,12 @@ h1 {
   font-size: 1rem;
 }
 
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+  font-weight: bold;
+}
+
 .text-dark {
   color: #000;
 }
@@ -171,6 +177,12 @@ h1 {
   margin-bottom: 0;
 }
 
+.overlay i {
+  font-size: 60px;
+  color: #000;
+  margin: 20px;
+}
+
 .project {
   position: relative;
 }
@@ -183,16 +195,101 @@ h1 {
   opacity: 0.5;
 }
 
-.overlay i {
-  font-size: 60px;
-  color: #000;
+/* Contents section */
+.contents {
+  min-height: 300px;
+  padding: 30px;
+}
+
+.contents .card {
+  width: 80%;
+  max-width: 600px;
   margin: 20px;
 }
 
+.contents .card-header {
+  font-weight: bold;
+}
+
+/* Testimonials section */
+.testimonials {
+  padding: 40px 40px 80px;
+}
+
+.testimonials .carousel {
+  max-width: 800px;
+}
+
+.carousel .carousel-items {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial__img {
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px 20px;
+}
+
+.testimonial__text {
+  max-width: 70%;
+  font-size: 1.2rem;
+  font-family: "Share Tech Mono", monospace;
+  text-align: center;
+}
+
+.testimonial__info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonial__info p {
+  margin-bottom: 0;
+}
+
+.testimonial__info .customer {
+  font-size: 1.2rem;
+}
+
+.testimonial__info .position {
+  font-size: 0.9rem;
+  color: #656060;
+}
+
 /* Media queries */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonial__img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .testimonial__text {
+    font-size: 1rem;
   }
 }
 
